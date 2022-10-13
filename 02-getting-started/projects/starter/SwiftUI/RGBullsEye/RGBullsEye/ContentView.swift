@@ -33,9 +33,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    // View는 Protocol
+    /* body는 아래와 같이 정의되어 있음
+     @ViewBuilder @MainActor var body: Self.Body { get }
+     */
   var body: some View {
-    Text("Hello, world!")
-      .padding()
+      VStack {
+          VStack {
+              Color(red: 0.5, green: 0.5, blue: 0.5)
+              Text("R: ??? G: ??? B: ???")
+                  .padding()
+              Color(red: 0.5, green: 0.5, blue: 0.5)
+              Text("R: 204 G: 76 B: 178")
+                  .padding()
+              Slider(value: .constant(0.5))
+              Button(action: {}) {
+                  Text("Hit Me!")
+              }.padding()
+          }
+      }
   }
 }
 
