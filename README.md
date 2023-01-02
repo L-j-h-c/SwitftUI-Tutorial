@@ -22,6 +22,41 @@ Github : [SwiftUI-Totorial-Material](https://github.com/raywenderlich/sui-materi
 <details markdown="1">
 <summary>배운 내용</summary>
 
+### 목표
+
+- Xcode Canavase를 이용해서 코드와 UI를 동시에 보며 작업하는 방법 알아보기
+- 재사용 가능한 뷰 만드는 방법 알아보기
+- `@State` 키워드에 대해 알아보기
+- Alert 띄우기
+
+### 내용
+
+
+
+```swift
+@main
+struct RGBullsEyeApp: App {
+  var body: some Scene {
+    WindowGroup {
+      ContentView(guess: RGB())
+    }
+  }
+}
+```
+
+
+```swift
+@ViewBuilder @MainActor var body: Self.Body { get }
+```
+
+
+</details>
+
+<details markdown="1">
+<summary>질문</summary>
+
+1. App Protocol은 무슨 역할을 하고 어떻게 사용할 수 있을까?
+2. 
 
 
 </details>
